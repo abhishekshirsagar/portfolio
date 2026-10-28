@@ -49,7 +49,7 @@ button:disabled { opacity: .35; cursor: default; }
 .download-button:hover { border-color: var(--ink); background: var(--surface); }
 .resume-main { position: relative; flex: 1 1 auto; min-height: 0; background: var(--paper); }
 #viewer-container { position: absolute; inset: 0; overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable both-edges; touch-action: pan-x pan-y; }
-.pdfViewer { --viewer-container-height: 100%; padding: 24px; }
+.pdfViewer { --viewer-container-height: 100%; padding: 16px 24px; }
 .pdfViewer .page { margin: 0 auto 24px; box-shadow: 0 1px 5px #00000014; }
 .pdfViewer .page:last-child { margin-bottom: 0; }
 .pdfViewer .canvasWrapper { overflow: hidden; }

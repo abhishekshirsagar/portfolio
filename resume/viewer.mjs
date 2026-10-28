@@ -56,6 +56,18 @@ function changeZoom(factor, origin, pan) {
   updateControls();
 }
 
+function fitDocument() {
+  if (!ready) return;
+  const page = viewer.getPageView(viewer.currentPageNumber - 1);
+  const style = getComputedStyle(viewer.viewer);
+  const width = container.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+  const height = container.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom);
+  viewer.currentScale = Math.min(width / page.width, height / page.height) * page.scale;
+  container.scrollTop = 0;
+  container.scrollLeft = 0;
+  viewer.update();
+}
+
 document.addEventListener('wheel', event => {
   if (!event.ctrlKey && !event.metaKey) return;
   event.preventDefault();
@@ -107,13 +119,13 @@ zoomIn.addEventListener('click', () => changeZoom(1.25));
 zoomOut.addEventListener('click', () => changeZoom(1 / 1.25));
 fitPage.addEventListener('click', () => {
   fitMode = true;
-  viewer.currentScaleValue = 'page-fit';
+  fitDocument();
   updateControls();
 });
 
 eventBus.on('pagesinit', () => {
   ready = true;
-  viewer.currentScaleValue = 'page-fit';
+  fitDocument();
   updateControls();
 });
 eventBus.on('scalechanging', updateControls);
@@ -125,7 +137,7 @@ eventBus.on('pagerendered', ({ error }) => {
 
 new ResizeObserver(() => {
   if (!ready) return;
-  if (fitMode) viewer.currentScaleValue = 'page-fit';
+  if (fitMode) fitDocument();
   viewer.update();
 }).observe(container);
 
