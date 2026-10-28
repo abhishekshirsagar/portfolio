@@ -1,0 +1,28 @@
+#portfolio-mobile-resume { display: none; }
+
+@media (max-width: 809px) {
+  #portfolio-mobile-resume {
+    position: absolute;
+    top: 44px;
+    right: 20px;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 36px;
+    padding: 6px 13px;
+    border: 1px solid #888;
+    border-radius: 22px;
+    background: #fff;
+    color: #707070;
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-decoration: none;
+  }
+  #portfolio-mobile-resume img { display: block; opacity: .6; }
+  #portfolio-mobile-resume:hover { color: #2b2b2b; border-color: #2b2b2b; }
+  #portfolio-mobile-resume:focus-visible { outline: 2px solid #006f78; outline-offset: 4px; }
+}

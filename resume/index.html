@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Abhishek Kshirsagar</title>
+  <meta name="description" content="Abhishek Kshirsagar's resume." />
+  <link rel="icon" href="../assets/framerusercontent.com/images/FS86fqNeCy5LxZFNzqiPPjnNDE.png" />
+  <link rel="stylesheet" href="../assets/resume/pdfjs/web/pdf_viewer.css" />
+  <link rel="stylesheet" href="viewer.css" />
+  <script type="module" src="viewer.mjs"></script>
+</head>
+<body>
+  <header class="proj-topbar">
+    <div class="proj-topbar-inner">
+      <a class="proj-back back-link" href="../" aria-label="Back to portfolio">
+        <svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.29 15.46l-3.88-3.88 3.88-3.88c.39-.39.39-1.02 0-1.41a.9959.9959 0 0 0-1.41 0l-4.59 4.59c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .38-.39.39-1.03 0-1.42z"></path></svg>
+        <span>Back</span>
+      </a>
+      <div class="resume-toolbar" role="toolbar" aria-label="Resume controls">
+        <div class="zoom-controls" role="group" aria-label="Document zoom">
+          <button class="icon-button" id="zoom-out" type="button" title="Zoom out" aria-label="Zoom out" disabled><img src="../assets/resume/icons/minus.svg" alt="" width="19" height="19" /></button>
+          <output id="zoom-level" aria-label="Zoom level" aria-live="polite">&mdash;</output>
+          <button class="icon-button" id="zoom-in" type="button" title="Zoom in" aria-label="Zoom in" disabled><img src="../assets/resume/icons/plus.svg" alt="" width="19" height="19" /></button>
+          <span class="control-divider" aria-hidden="true"></span>
+          <button class="icon-button" id="fit-page" type="button" title="Fit to page" aria-label="Fit to page" aria-pressed="true" disabled><img src="../assets/resume/icons/maximize.svg" alt="" width="18" height="18" /></button>
+        </div>
+        <a class="download-button" href="resume_abhishekshirsagar.pdf" download="Abhishek-Kshirsagar-Resume.pdf" title="Download resume" aria-label="Download resume">
+          <img src="../assets/resume/icons/download.svg" alt="" width="18" height="18" /><span>Download</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="resume-main" aria-label="Resume document" aria-busy="true">
+    <div id="viewer-container" tabindex="0" aria-label="Resume pages">
+      <div id="viewer" class="pdfViewer removePageBorders"></div>
+    </div>
+    <div id="document-status" role="status" aria-live="polite">
+      <span class="loading-mark" aria-hidden="true"></span>
+      <p id="status-message">Loading resume...</p>
+      <a id="fallback-download" href="resume_abhishekshirsagar.pdf" download="Abhishek-Kshirsagar-Resume.pdf" hidden>Download PDF</a>
+    </div>
+    <noscript><a class="noscript-download" href="resume_abhishekshirsagar.pdf" download="Abhishek-Kshirsagar-Resume.pdf">Download resume PDF</a></noscript>
+  </main>
+</body>
+</html>

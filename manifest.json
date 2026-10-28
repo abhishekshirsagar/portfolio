@@ -35,8 +35,8 @@
       "route": "/",
       "originalURL": "https://abhishekshirsagar.framer.website/",
       "localPath": "index.html",
-      "bytes": 295229,
-      "hash": "20f97600da19fc4e2d9deaf035594d3a97d04351c794ffb01d47830f9609c3cd",
+      "bytes": 295359,
+      "hash": "79ee0b2938013d85e9a451887f2e5097be96cf4fbd466be590f2eed2eb1929d3",
       "sourceHash": "f5d156432ac3cf9a06dd29974a23aae714b7057a491caac28e463ed8d4503a6e"
     },
     {
@@ -7919,8 +7919,8 @@
       "sourceHash": "52ffb0d4a1cb9f06c0e41a49a75d3744edeac2a1c349ece18b53c0333e4caef4",
       "contentType": "text/javascript",
       "finalURL": "https://framerusercontent.com/sites/6j6z7k2QV97Twanljhldfc/go1YUUxLcIN8YxQtCr5MB-yEirUVF4OTH__PKDLt1RM.56VAGCRL.mjs",
-      "bytes": 109520,
-      "hash": "63ce8e5c30ac43d2271ea6090e9f273cdef0ceb6523eef742bf10c756c7b6e6d",
+      "bytes": 109506,
+      "hash": "8efb9cc3b37643bd42b0ffe901afd9bd9170d086437c126badb59a930d2126f7",
       "execution": "live"
     },
     {
@@ -36740,8 +36740,16 @@
   ],
   "verification": {
     "passed": true,
-    "checkedAt": "2026-10-28T16:08:48.639Z",
+    "checkedAt": "2026-10-28T16:55:49.066Z",
     "files": 661,
     "kind": "local dependency graph and SHA-256 integrity; browser fidelity is not tested"
+  },
+  "customizations": {
+    "resume": {
+      "route": "/resume/",
+      "pdf": "resume/resume_abhishekshirsagar.pdf",
+      "renderer": "PDF.js",
+      "navigation": "Same-tab local route, including hydrated Framer links"
+    }
   }
 }
