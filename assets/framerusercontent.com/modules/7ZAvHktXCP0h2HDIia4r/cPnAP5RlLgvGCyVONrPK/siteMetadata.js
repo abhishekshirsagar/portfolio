@@ -1,0 +1,2 @@
+const metadata=params=>({description:"Made with Framer",favicon:new URL("assets/FS86fqNeCy5LxZFNzqiPPjnNDE.png",import.meta.url).href,title:"My Framer Site"});export default metadata;export const metadataVersion=1;
+export const __FramerMetadata__ = {"exports":{"metadataVersion":{"type":"variable","annotations":{"framerContractVersion":"1"}},"default":{"type":"variable","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}

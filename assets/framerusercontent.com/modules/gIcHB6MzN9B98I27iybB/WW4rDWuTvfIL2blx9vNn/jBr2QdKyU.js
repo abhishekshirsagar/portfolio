@@ -1,0 +1,2 @@
+export default function metadata(params,activeLocale){return{bodyClassName:"framer-body-jBr2QdKyU",breakpoints:[{hash:"otex33"}],elements:{},framerSearch:{index:true},title:"Project Template",viewport:"width=1200"};};export const metadataVersion=1;
+export const __FramerMetadata__ = {"exports":{"default":{"type":"function","annotations":{"framerContractVersion":"1"}},"metadataVersion":{"type":"variable","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}
